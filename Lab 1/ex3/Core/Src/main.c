@@ -91,10 +91,10 @@ int main(void)
 
 
   int counter = 5;
-  int led_state = 0; // 0: red, 1: blue, 2: yellow
+  int led_state = 0; // 0: red, 1: green, 2: yellow
 
   HAL_GPIO_WritePin(DEBUG_LED_GPIO_Port, DEBUG_LED_Pin, 1); // red
-  HAL_GPIO_WritePin(OUTPUT_Y0_GPIO_Port, OUTPUT_Y0_Pin, 0); // blue
+  HAL_GPIO_WritePin(OUTPUT_Y0_GPIO_Port, OUTPUT_Y0_Pin, 0); // green
   HAL_GPIO_WritePin(OUTPUT_Y1_GPIO_Port, OUTPUT_Y1_Pin, 1); // yellow
   /* USER CODE END 2 */
 
