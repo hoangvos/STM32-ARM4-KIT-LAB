@@ -16,9 +16,11 @@ int timer_counter[TIMER_NUMBER];
 int timer_flag[TIMER_NUMBER];
 
 void initTimer() {
+	HAL_TIM_Base_Start_IT(&htim2);
 	setTimer(0, LED_BLINK_TIME);
 	setTimer(1, TRAFFIC_LIGHT_TIME);
 	setTimer(2, BUTTON_READING_TIME);
+	setTimer(3, DEBUG_LED_TIME);
 }
 
 void setTimer(int index, int duration){

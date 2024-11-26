@@ -79,7 +79,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-  system_init();
+
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -95,9 +95,7 @@ int main(void)
   MX_TIM2_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
-  lcd_Clear(WHITE);
-  HAL_Delay(1000);
-  lcd_DrawCircle(100, 100, RED, 50, 0);
+  system_init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -107,6 +105,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	if (timer_flag[3] == 1) {
+	  setTimer(3, DEBUG_LED_TIME);
+	  HAL_GPIO_TogglePin(DEBUG_LED_GPIO_Port, DEBUG_LED_Pin);
+	}
+
 	if (timer_flag[2] == 1) {
 	  setTimer(2, BUTTON_READING_TIME);
 	  button_Scan();

@@ -26,6 +26,7 @@ typedef enum
 } TrafficLightDisplayState;
 
 extern TrafficLightDisplayState traffic_light_display_state;
+extern TrafficLightDisplayState traffic_light_display_state_pre;
 
 void redXOn();
 void amberXOn();

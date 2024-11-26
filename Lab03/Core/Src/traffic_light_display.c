@@ -8,6 +8,7 @@
 #include "traffic_light_display.h"
 
 TrafficLightDisplayState traffic_light_display_state = NONE;
+TrafficLightDisplayState traffic_light_display_state_pre = YGREEN;
 
 void redXOn() {
   lcd_DrawCircle(90, 110, RED, 20, 1);
@@ -47,6 +48,9 @@ void greenOff() {
 }
 
 void displayTrafficLight(){
+  if (traffic_light_display_state == traffic_light_display_state_pre)
+	  return;
+  traffic_light_display_state_pre = traffic_light_display_state;
   switch (traffic_light_display_state) {
     case NONE:
       redOff();
