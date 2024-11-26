@@ -1,0 +1,8 @@
+game_display.c:20:6:drawCell	32	static
+game_display.c:24:6:renderScreen	16	static
+game_display.c:38:6:generateFruit	8	static
+game_display.c:45:6:initializeGame	16	static
+game_display.c:60:6:advanceSnakeHead	4	static
+game_display.c:70:6:removeSnakeTail	16	static
+game_display.c:87:6:handleInput	8	static
+game_display.c:100:6:displayStartScreen	24	static

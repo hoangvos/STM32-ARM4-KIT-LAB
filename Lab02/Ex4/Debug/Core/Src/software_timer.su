@@ -1,0 +1,7 @@
+software_timer.c:23:6:updateTime	8	static
+software_timer.c:34:6:updateColon	8	static
+software_timer.c:40:6:displayTime	24	static
+software_timer.c:58:6:timer_init	8	static
+software_timer.c:70:6:setTimer_colon	24	static
+software_timer.c:75:6:setTimer_update_time	24	static
+software_timer.c:81:6:HAL_TIM_PeriodElapsedCallback	16	static
