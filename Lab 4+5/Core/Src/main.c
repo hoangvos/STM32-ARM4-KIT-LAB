@@ -60,10 +60,10 @@ uint8_t count_modify = 0;
 uint8_t count_timer = 0;
 uint8_t temp = 0;
 uint8_t temp_timer = 0;
-uint8_t flag = 0;
 uint8_t flag_uart = 0;
 uint8_t time_out_count = 0;
 uint8_t time_out_stat = 0;
+uint8_t flag = 0;
 
 enum Mode {
 	modeInit,
@@ -71,10 +71,10 @@ enum Mode {
 	modeModify,
 	modeTimer,
 };
-enum Mode currentMode = modeInit;
 uint8_t temp_time[7];
 uint8_t timer[7];
 uint8_t timerPresent[7];
+enum Mode currentMode = modeInit;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -82,9 +82,9 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 void system_init();
 void test_LedDebug();
-void displayTime();
-void updateTime();
 void fsm();
+void updateTime();
+void displayTime();
 void test_Uart();
 /* USER CODE END PFP */
 
