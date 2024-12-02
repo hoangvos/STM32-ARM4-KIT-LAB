@@ -718,6 +718,7 @@ void fsm() {
 				lcd_Fill(0, 50, 240, 75, BLACK);
 				lcd_Fill(0, 200, 240, 250, BLACK);
 				currentMode = modeTimer;
+
 			}
 			break;
 		case modeTimer:
