@@ -375,7 +375,7 @@ void displayTime(){
 }
 
 void ConfigTime() {
-	count_modify = (count_modify + 1) % 10;
+	count_modify = (count_modify + 1) % 20;
 	if (flag_uart == 1) {
 		time_out_count = (time_out_count + 1) % 200;
 		if (time_out_count == 0) {
@@ -392,7 +392,7 @@ void ConfigTime() {
 			}
 		}
 	}
-	if (count_modify > 5) {
+	if (count_modify > 10) {
 		switch (temp){
 			case 0:
 				lcd_ShowIntNum(70, 100, "  ", 2, BLACK, BLACK, 24);
@@ -579,8 +579,8 @@ void ConfigTime() {
 }
 
 void ConfigTimer() {
-	count_timer = (count_timer + 1) % 10;
-	if (count_timer > 5) {
+	count_timer = (count_timer + 1) % 20;
+	if (count_timer > 10) {
 		switch (temp_timer){
 			case 0:
 				lcd_ShowIntNum(70, 100, "  ", 2, BLACK, BLACK, 24);
