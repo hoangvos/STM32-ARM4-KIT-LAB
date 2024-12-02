@@ -141,8 +141,9 @@ int main(void)
 	  while(!flag_timer2);
 	  flag_timer2 = 0;
 	  button_Scan();
+	  test_LedDebug();
 	  ds3231_ReadTime();
-//	  test_Uart();
+	  test_Uart();
 	  fsm();
 
 
@@ -197,6 +198,9 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 void system_init(){
+	  HAL_GPIO_WritePin(OUTPUT_Y0_GPIO_Port, OUTPUT_Y0_Pin, 0);
+	  HAL_GPIO_WritePin(OUTPUT_Y1_GPIO_Port, OUTPUT_Y1_Pin, 0);
+	  HAL_GPIO_WritePin(DEBUG_LED_GPIO_Port, DEBUG_LED_Pin, 0);
 	  timer_init();
 	  led7_init();
 	  button_init();
