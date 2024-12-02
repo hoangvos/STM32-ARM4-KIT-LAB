@@ -1,0 +1,16 @@
+../Core/Src/main.c:100:5:main	2
+../Core/Src/main.c:158:6:SystemClock_Config	3
+../Core/Src/main.c:199:6:system_init	1
+../Core/Src/main.c:213:6:toChar	3
+../Core/Src/main.c:221:6:test_LedDebug	2
+../Core/Src/main.c:228:6:updateTime	1
+../Core/Src/main.c:238:6:test_button	3
+../Core/Src/main.c:247:6:test_Uart	3
+../Core/Src/main.c:261:7:Mode	5
+../Core/Src/main.c:279:6:checkTime	15
+../Core/Src/main.c:319:6:checkTimer	15
+../Core/Src/main.c:360:6:displayTime	1
+../Core/Src/main.c:371:6:ConfigTime	38
+../Core/Src/main.c:575:6:ConfigTimer	21
+../Core/Src/main.c:655:6:fsm	31
+../Core/Src/main.c:765:6:Error_Handler	1

@@ -1,0 +1,5 @@
+../Core/Src/ring_buffer.c:10:6:initRingBuffer	1
+../Core/Src/ring_buffer.c:15:5:isRingBufferEmpty	1
+../Core/Src/ring_buffer.c:19:5:isRingBufferFull	1
+../Core/Src/ring_buffer.c:23:6:addToRingBuffer	2
+../Core/Src/ring_buffer.c:33:6:getFromRingBuffer	2
