@@ -2,16 +2,16 @@
 #include "Adafruit_MQTT.h"
 #include "Adafruit_MQTT_Client.h"
  // Wifi name
- #define WLAN_SSID "Pixel_7518"
+ #define WLAN_SSID "..."
  // Wifi password
- #define WLAN_PASS "123456789"
+ #define WLAN_PASS "..."
 // setup Adafruit
  #define AIO_SERVER "io.adafruit.com"
  #define AIO_SERVERPORT 1883
  // fill your username
- #define AIO_USERNAME "hieu219"
+ #define AIO_USERNAME "..."
  // fill your key
- #define AIO_KEY "aio_AUae696yn2sEH20zcEc2tJZaSeCT"
+ #define AIO_KEY "..."
 
  // setup MQTT
 WiFiClient client ;
