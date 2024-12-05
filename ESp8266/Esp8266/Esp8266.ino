@@ -43,12 +43,10 @@ float temp;
 // Serial.println("Wi-fi is OK!!");
  while (mqtt.connect() != 0) {
  delay (500) ;
-}
-
-
+  }
  // finish setup , set busy pin LOW
  digitalWrite (5, LOW);
- }
+}
  void loop () {
  // put your main code here , to run repeatedly :
 
@@ -57,35 +55,4 @@ if (Serial.available() > 0) {
     str.trim();
     light_pub . publish(str.toFloat());
   }
-
-
-
-
-
-// if( Serial . available ()){
- //int msg = Serial . read ();
- 
-//  temp = Serial.parseFloat();
-//  light_pub . publish(temp);
-//  Serial.println(temp);
-//  if(msg == 'o') Serial . print ('O');
-//  else if(msg == 'a') light_pub . publish (0);
-//  else if(msg == 'A') light_pub . publish (1);
-// }
-// }
-
-
- led_counter ++;
- if( led_counter == 100) {
- // every 1s
- led_counter = 0;
- // toggle LED
- if( led_status == HIGH ) led_status = LOW ;
- else led_status = HIGH ;
-
- digitalWrite (2, led_status );
- }
-
-
-//delay (30000) ;
- }
+}
